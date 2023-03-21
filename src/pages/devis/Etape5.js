@@ -32,7 +32,7 @@ export default function Etape5() {
   }
 
   return (
-    <div>
+    <div className="bg_img">
       <Navbar />
       <div className=" container  justify-content-center row">
         <div className=" cardFormulaire   col-md-8 col-lg-8 col-sm-12">
@@ -70,7 +70,7 @@ export default function Etape5() {
             </div>
             <div className="row justify-content-end">
               <button
-                className="form-button "
+                className="form-button centered-button"
                 onClick={() => {
                   router.push({
                     pathname: "/devis/Etape3",

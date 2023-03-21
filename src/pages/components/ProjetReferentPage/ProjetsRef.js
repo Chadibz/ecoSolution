@@ -6,9 +6,9 @@ export default function ProjetsRef() {
         <div className="row justify-content-center ">
           <div className=" col-sm-12 col-md-10">
             <Projet />
-            </div>
-           </div>
-         </div>
+          </div>
+        </div>
       </div>
+    </div>
   );
 }

@@ -10,9 +10,9 @@ export default function Etape2() {
     router.query.technology ?? "Allemande"
   );
   return (
-    <div>
+    <div className="bg_img">
       <Navbar />
-      <div className=" container  justify-content-center row">
+      <div className=" container   justify-content-center row">
         <div className=" cardFormulaire   col-md-8 col-lg-8 col-sm-12">
           <div>
             <h4 className=" row cardFormulaire-title  justify-content-center  ">
@@ -55,7 +55,7 @@ export default function Etape2() {
 
             <div className="abc">
               <button
-                className="form-button"
+                className="form-button centered-button"
                 onClick={() => {
                   router.push({
                     pathname: "/devis/Cordonnees",

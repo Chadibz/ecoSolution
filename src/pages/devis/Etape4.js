@@ -15,7 +15,7 @@ export default function Etape4() {
   );
 
   return (
-    <div>
+    <div className="bg_img">
       <Navbar />
       <div className=" container  justify-content-center row">
         <div className=" cardFormulaire   col-md-8 col-lg-8 col-sm-12">
@@ -54,7 +54,7 @@ export default function Etape4() {
             {type === "pompageSoleil" ? (
               <div className=" row  justify-content-center ">
                 <div className="col">
-                  <label>Puissance Pompe:</label>
+                  <label class="label success">Puissance Pompe:</label>
                 </div>
                 <div className="row  justify-content-center ">
                   <select
@@ -109,7 +109,7 @@ export default function Etape4() {
 
             <div className="row justify-content-end">
               <button
-                className="form-button "
+                className="form-button centered-button "
                 onClick={() => {
                   router.push({
                     pathname: "/devis/Etape3",

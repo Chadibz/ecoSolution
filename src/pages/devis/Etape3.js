@@ -16,7 +16,7 @@ export default function Etape3() {
     router.query.orientation ?? "sud"
   );
   return (
-    <div>
+    <div className="bg_img">
       <Navbar />
       <div className=" container  justify-content-center row">
         <div className=" cardFormulaire   col-md-8 col-lg-8 col-sm-12">
@@ -28,11 +28,12 @@ export default function Etape3() {
           <div>
             <div className=" row  justify-content-center ">
               <div className="col">
-                <label>Emplacement:</label>
+                <label class="label success">Emplacement:</label>
               </div>
               <div className="col">
                 <input
                   type="radio"
+                  class="input6 "
                   name="emplacement"
                   id="toit"
                   value="toit"
@@ -41,12 +42,15 @@ export default function Etape3() {
                     setPlace("toit");
                   }}
                 />
-                <img className="imgPaneau" src={img_panneau_sol}></img>
-                <label for="toit">sur le toit</label>
+                <span class="design"></span>
+                <label class="text" for="toit">
+                  sur le toit
+                </label>
               </div>
               <div className="col">
                 <input
                   type="radio"
+                  class="option-input radio"
                   name="emplacement"
                   id="sol"
                   value="sol"
@@ -54,8 +58,11 @@ export default function Etape3() {
                   onClick={(event) => {
                     setPlace("sol");
                   }}
-                />
-                <label for="sol">sur le sol</label>
+                />{" "}
+                <span class="design"></span>
+                <label class="text" for="sol">
+                  sur le sol
+                </label>
               </div>
             </div>
             <div className=" row  justify-content-center ">
@@ -99,7 +106,7 @@ export default function Etape3() {
 
             <div className="row justify-content-end">
               <button
-                className="form-button "
+                className="form-button centered-button "
                 onClick={() => {
                   router.push({
                     pathname: "/devis/Etape2",
@@ -153,3 +160,4 @@ export default function Etape3() {
     </div>
   );
 }
+//<img className="imgPaneau" src={img_panneau_sol}></img>

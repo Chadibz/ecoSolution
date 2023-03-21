@@ -20,14 +20,16 @@ export default function Home() {
       <main>
         <div>
           <Navbar />
-          
-          <BootstrapCarousel />
-          <Progress/>
-          <Services />
+          <div className="bg_img">
+            <BootstrapCarousel />
+
+            <Progress />
+            <Services />
+          </div>
           <Projets />
-          <Blogs/>
+          <Blogs />
+
           <Footer />
-         
         </div>
       </main>
     </>

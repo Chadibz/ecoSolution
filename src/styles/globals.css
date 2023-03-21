@@ -336,6 +336,8 @@ margin-top: 30px;
 display: flex;
 }
 .form-button{
+ 
+  
   margin-top: 30px;
   border-radius: 5px;
   padding: 10px;
@@ -346,7 +348,9 @@ display: flex;
   color: #ffffff;
   border: 1px solid #09A79D;
   box-shadow: #adabab; 
+  text-align: center;
 }
+
 .form-button:hover{
   transform: scale(1.1);
   background-color: #faae12;
@@ -388,9 +392,49 @@ display: flex;
 .formSelect {
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #104e49;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+select {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid gray;
+  font-size: 1rem;
+  width: 100%;
+  appearance: none;
+  /* remove default appearance */
+  background-color: white;
+  /*set background color */
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.6569 9.17155C17.0774 8.59199 16.2233 8.59199 15.6438 9.17155L12 12.8154L8.35616 9.17155C7.7766 8.59199 6.92255 8.59199 6.343 9.17155C5.76344 9.7511 5.76344 10.6052 6.343 11.1848L11.1848 16.0266C11.7643 16.6061 12.6184 16.6061 13.1979 16.0266L18.0397 11.1848C18.6193 10.6052 18.6193 9.7511 18.0397 9.17155L17.6569 9.17155Z' fill='%23333333'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem top 50%;
+  background-size: 1.2rem auto;
 }
 
+option {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+option {
+  padding: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: #666;
+  border: none;
+}
 
+option:hover {
+  background-color: #ccc;
+  color: #000;
+}
 
 
 
@@ -448,8 +492,11 @@ body {
 }
 
 .container {
+ 
+ 
   max-width: 1170px;
   margin: auto;
+  opacity: 90%;
 }
 
 .row {
@@ -678,4 +725,59 @@ ul {
 }
 body{
   background-color:#eeeeee ;
+}
+/* zeyedet */
+/*background*/
+.bg_img {
+  background: url("../../public/assets/25ss15684.png") ;
+  
+  background-size: auto;
+
+  background-position-y: center;
+  background-position-x:center;
+ background-repeat: no-repeat;
+ 
+ 
+ 
+  
+
+}
+
+
+
+
+
+input[type="radio"] {
+  background-color: transparent;
+  border: 0.0625em solid rgba(131, 130, 130, 0.5);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0 white;
+  cursor: pointer;
+  font: inherit;
+  height: 1em;
+  outline: none;
+  width: 1em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="radio"]:checked {
+  background-color:#47d1da;
+  box-shadow: inset 0 0 0 0.1875em #47d1da;
+  -webkit-transition: background 0.15s, box-shadow 0.1s;
+  transition: background 0.15s, box-shadow 0.1s;
+}
+
+.label {
+  color: white;
+  padding: 8px;
+}
+
+.success {
+  background-color: #09A79D;
+}
+/*center text*/
+.centered-button {
+  display: flex;
+  justify-content: center;
 }

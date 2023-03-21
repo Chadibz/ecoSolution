@@ -15,9 +15,10 @@ export default function Cordonnees() {
   const [job, setJob] = useState(router.query.job ?? "");
   const [age, setAge] = useState(router.query.age ?? "");
   return (
-    <div>
+    <div className="bg_img">
       <Navbar />
-      <div className=" container  justify-content-center row">
+
+      <div className=" container    justify-content-center row  ">
         <div className=" cardFormulaire   col-md-8 col-lg-8 col-sm-12">
           <div>
             <h4 className=" row cardFormulaire-title  justify-content-center  ">
@@ -133,6 +134,7 @@ export default function Cordonnees() {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
